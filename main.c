@@ -8,6 +8,27 @@ int main()
 
     init_curve(&C);
 
+    /*
+    struct Point QQ;
+    BIGNUM * zro = BN_new();
+    BIGNUM * one = BN_new();
+    BN_dec2bn(&zro, "0");
+    BN_dec2bn(&one, "1");
+    init_point(&QQ, zro, one, one, one);
+    */
+
+    /*
+    BIGNUM * x1 = BN_new();
+    BIGNUM * y1 = BN_new();
+    BIGNUM * t1 = BN_new();
+    BIGNUM * z1 = BN_new();
+    BN_dec2bn(&x1, x_s);
+    BN_dec2bn(&y1, y_s);
+    BN_dec2bn(&z1, t_s);
+    BN_dec2bn(&t1, z_s);
+    init_point(&P, x1, y1, t1, z1);
+     */
+
     init_point_wpar(&P);
 
     //Tест 1
